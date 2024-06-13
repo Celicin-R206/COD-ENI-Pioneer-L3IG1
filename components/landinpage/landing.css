@@ -1,0 +1,25 @@
+.landinpage{
+    overflow: hidden;
+}
+
+span.blue{
+    color: var(--light-blue);
+    font-size: 18px;
+}
+
+span.linear{
+    background: linear-gradient(to right,#EE3E54,#17BA09,#2D68FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.landinpage h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.landinpage .logo svg{
+    width: 5.6rem;
+    height: 4rem;
+}

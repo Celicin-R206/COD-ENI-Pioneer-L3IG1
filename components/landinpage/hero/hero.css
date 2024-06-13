@@ -1,0 +1,78 @@
+/** @format */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 1rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: "TT_bold";
+  font-size: 5rem;
+  font-weight: 900;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > div{
+  position: relative;
+  z-index: 2;
+}
+
+.hero > .bottom {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > .bottom button > div {
+  padding: 1rem 2.2rem;
+}
+
+.hero > .bottom svg.disq {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+
+.hero > .bottom svg.arrow {
+  width: 7rem;
+}
+
+.hero img.absolute {
+  position: absolute;
+  width: 6rem;
+  left: 4.5rem;
+  bottom: 4.5rem;
+}
+
+.hero img.absolute.left{
+  width: 45rem;
+  height: 45rem;
+  top: -9rem;
+  left: -11rem;
+  z-index: 1;
+}
+
+.hero img.right{
+  position: absolute;
+  width: 45rem;
+  height: 45rem;
+  top: -2rem;
+  right: -10rem;
+  z-index: 1;
+}
+
+.hero img.absolute.star{
+  width: 12rem;
+  height: 12rem;
+  top: 3rem;
+  left: auto;
+  right: 0;
+  z-index: 1;
+}
