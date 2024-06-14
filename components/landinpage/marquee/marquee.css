@@ -7,12 +7,11 @@
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 1px;
-    padding: 1.3rem 0;
     transform: rotate(4deg);
     margin: 6rem 0;
 }
 
-.marquee >div{
+.marquee .content{
     display: flex;
     gap: 0.5rem;
     align-items: center;

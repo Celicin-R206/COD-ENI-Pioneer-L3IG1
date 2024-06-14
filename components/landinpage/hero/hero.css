@@ -17,11 +17,30 @@
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 svg{
+  scale: 0;
+  transform-origin: center;
+}
+
+.hero h1 span{
+  transform: translateY(100%);
 }
 
 .hero > div{
   position: relative;
   z-index: 2;
+}
+
+.hero > .top {
+  overflow: hidden;
+}
+
+.hero > .top svg{
+  transform: translate(-50%,120%)  rotate(-90deg) scale(0.5);
 }
 
 .hero > .bottom {

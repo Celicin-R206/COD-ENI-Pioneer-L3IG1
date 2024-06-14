@@ -7,9 +7,28 @@
 
 .nav-bar> .cta{
     display: flex;
+    position: relative;
+    z-index: 200;
     gap: 1rem;
     align-items: center;
 }
+
+.cta-menu{
+    width: 5rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--black-color);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.cta-menu svg{
+    width: 32px;
+}
+
+/* .cta-menu  */
 
 /* .nav-bar> .cta svg{
     height: 2.6rem;
@@ -20,34 +39,3 @@
     height: 4rem;
 }
 
-
-.nav-bar .menu{
-    position: relative;
-    display: none;
-    z-index: 999;
-    padding: 1rem;
-    background: green;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    transition: background .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    cursor: pointer;
-    /* transform: scale(0); */
-}
-
- /* .menu.openMenu svg path{
-    color: #fff;
-}
-
- .menu.close{
-    background: #fff;
-} */
-
-.nav-bar .menu.close svg path{
-    stroke: black;
-}
-
-.nav-bar .menu svg{
-    width: 24px;
-    height: 24px;
-}

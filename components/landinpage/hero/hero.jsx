@@ -1,10 +1,20 @@
 /** @format */
+"use client"
 
-import React from "react";
+import React, { useEffect } from "react";
 import "./hero.css";
 import Image from "next/image";
+import gsap from 'gsap'
 
 const Hero = () => {
+
+  useEffect(()=>{
+
+    gsap.to(".middle h1 span",{duration:1,yPercent:-100,ease:"power2",stagger:0.2})
+    gsap.to(".hero h1 svg",{delay:0.6,duration:1,scale:1,ease:"power2"})
+    gsap.to(".hero > .top svg",{delay:0.6,duration:1,transform:"translate(0%,0%)  rotate(0deg) scale(1)",ease:"power2"})
+
+  },[])
   return (
     <div className="containers hero">
       <div className="top">
@@ -46,7 +56,7 @@ const Hero = () => {
           <span> votre inscription</span>
         </h1>
         <h1>
-          et gestion <span className="stroke">Scolaire</span>
+          <span>et gestion</span> <span className="stroke">Scolaire</span>
         </h1>
       </div>
       <div className="bottom">

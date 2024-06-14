@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
+import MarqueeWrapper from "@/components/magicui/marquee";
 import './marquee.css'
 
 const Marquee = () => {
   return (
     <div className='marquee'>
-        <div>
+        <MarqueeWrapper className="[--duration:20s]">
+        <div className="content relative overflow-hidden p-4">
             <Image
             alt='mq-star'
             src={"/assets/images/mq-star.svg"}
@@ -14,7 +16,7 @@ const Marquee = () => {
             />
             <span>Ecole nationale de l'informatique</span>
         </div>
-        <div>
+        <div className="content relative overflow-hidden p-4">
             <Image
             alt='mq-star'
             src={"/assets/images/mq-star.svg"}
@@ -23,7 +25,7 @@ const Marquee = () => {
             />
             <span>Université de Fianarantsoa</span>
         </div>
-        <div>
+        <div className="content relative overflow-hidden p-4">
             <Image
             alt='mq-star'
             src={"/assets/images/mq-star.svg"}
@@ -32,7 +34,7 @@ const Marquee = () => {
             />
             <span>Ecole nationale de l'informatique</span>
         </div>
-        <div>
+        <div className="content relative overflow-hidden p-4">
             <Image
             alt='mq-star'
             src={"/assets/images/mq-star.svg"}
@@ -41,6 +43,7 @@ const Marquee = () => {
             />
             <span>Ecole nationale de l'informatique</span>
         </div>
+        </MarqueeWrapper>    
     </div>
   )
 }
