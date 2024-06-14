@@ -6,6 +6,12 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 .header_main .left {

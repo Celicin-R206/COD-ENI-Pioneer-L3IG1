@@ -1,6 +1,7 @@
 /** @format */
 import "./style.css";
 import Header_main from "@/components/header_main/header_main";
+import "../globals.css";
 
 export const metadata = {
   title: "Create Next App",
