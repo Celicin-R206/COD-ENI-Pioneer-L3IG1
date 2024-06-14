@@ -42,7 +42,7 @@
     --light-dark: #00000070;
     --dark-blue: #004491;
     --light-blue: #2d68ff;
-    --blue-ocean: #00AC9C;
+    --blue-ocean: #00ac9c;
     --light-grey: #dddddd;
     --grey-color: #b3b3b3;
     --light-rose: #ff8b66;
@@ -100,6 +100,10 @@ main {
   font-family: "TT_regular";
 }
 
+.bg_color {
+  background: #f8f5e6;
+}
+
 .containers {
   width: 80rem;
   margin: auto;
@@ -137,9 +141,9 @@ main {
   margin: auto;
 }
 
-span.stroke{
+span.stroke {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width:2px
+  -webkit-text-stroke-width: 2px;
 }
 
 @font-face {
