@@ -54,10 +54,10 @@ const Hero = () => {
               fill="black"
             />
           </svg>
-          <span> votre inscription</span>
+          <span> votre accès aux</span>
         </h1>
         <h1>
-          <span>et gestion</span> <span className="stroke">Scolaire</span>
+          <span>services</span> <span className="stroke">Gouvernementaux</span>
         </h1>
       </div>
       <div className="bottom">

@@ -5,8 +5,8 @@ import "./features.css"
 const Features = () => {
   return (
     <div className='containers features'>
-        <span className="blue">. Grade premium account -</span>
-        <h2>Ready to unlock features ?</h2>
+        <span className="blue">. Une livraison rapide -</span>
+        <h2>Des services de livraison ?</h2>
         <div className="features-wrapper">
             <div className="feature">
                 <div className="contents">
@@ -17,11 +17,11 @@ const Features = () => {
                     <path d="M66.1822 30.4503C67.4344 31.0505 68.7369 32.0717 69.5312 33.229C70.3115 34.3659 70.4897 35.4312 70.0192 36.4126C69.5488 37.3941 68.6068 37.9225 67.2318 38.0262C65.832 38.1318 64.2201 37.7561 62.968 37.1559C61.7098 36.5528 60.2573 35.4563 59.3232 34.2039C58.3794 32.9385 58.1765 31.8434 58.6081 30.9429C59.0397 30.0424 60.0205 29.5147 61.5981 29.4579C63.1595 29.4017 64.9241 29.8472 66.1822 30.4503Z" stroke="#DDDDDD" stroke-width="3"/>
                     <path d="M51.3737 45.5615C52.0679 46.764 52.566 48.3424 52.5678 49.7461C52.5696 51.125 52.1149 52.1047 51.1723 52.6489C50.2297 53.1931 49.154 53.0971 47.9607 52.406C46.746 51.7026 45.628 50.4821 44.9337 49.2796C44.2361 48.0713 43.6569 46.346 43.5934 44.7849C43.5293 43.2075 43.9804 42.1893 44.8452 41.69C45.71 41.1907 46.8174 41.3092 48.1513 42.1534C49.4715 42.9889 50.6761 44.3532 51.3737 45.5615Z" stroke="#DDDDDD" stroke-width="3"/>
                   </svg>
-                  <h1>FREE</h1>
-                  <span>FROM</span>
-                  <h1>$0</h1>
-                  <span className='month-per'>PER MONTH</span>
-                  <button><span>See plan </span><ChevronRight/></button>
+                  <h1>GRATUIT</h1>
+                  <span>POUR</span>
+                  <h1>0 Ar</h1>
+                  <span className='month-per'>DPLEMENT SUR CITE</span>
+                  <button><span>Voir Detail </span><ChevronRight/></button>
                 </div>
             </div>
             <div className="feature">
@@ -38,10 +38,10 @@ const Features = () => {
                     <path d="M54.3737 56.5615C55.0679 57.764 55.566 59.3424 55.5678 60.7461C55.5696 62.125 55.1149 63.1047 54.1723 63.6489C53.2297 64.1931 52.154 64.0971 50.9607 63.406C49.746 62.7026 48.628 61.4821 47.9337 60.2796C47.2361 59.0713 46.6569 57.346 46.5934 55.7849C46.5293 54.2075 46.9804 53.1893 47.8452 52.69C48.71 52.1907 49.8174 52.3092 51.1513 53.1534C52.4715 53.9889 53.6761 55.3532 54.3737 56.5615Z" stroke="#FF8B66" stroke-opacity="0.5" stroke-width="3"/>
                   </svg>
                   <h1>GOLD</h1>
-                  <span>FROM</span>
-                  <h1>$0</h1>
-                  <span className='month-per'>PER MONTH</span>
-                  <button><span>See plan </span><ChevronRight/></button>
+                  <span>POUR</span>
+                  <h1>300 Ar</h1>
+                  <span className='month-per'>LIVRAISON ,2 JOURS MAX</span>
+                  <button><span>Voir detail </span><ChevronRight/></button>
                 </div>
             </div>
             <div className="feature">
@@ -56,10 +56,10 @@ const Features = () => {
                     <path d="M54.3737 48.5615C55.0679 49.764 55.566 51.3424 55.5678 52.7461C55.5696 54.125 55.1149 55.1047 54.1723 55.6489C53.2297 56.1931 52.154 56.0971 50.9607 55.406C49.746 54.7026 48.628 53.4821 47.9337 52.2796C47.2361 51.0713 46.6569 49.346 46.5934 47.7849C46.5293 46.2075 46.9804 45.1893 47.8452 44.69C48.71 44.1907 49.8174 44.3092 51.1513 45.1534C52.4715 45.9889 53.6761 47.3532 54.3737 48.5615Z" stroke="#DDDDDD" stroke-width="3"/>
                   </svg>
                   <h1>PRO</h1>
-                  <span>FROM</span>
-                  <h1>$0</h1>
-                  <span className='month-per'>PER MONTH</span>
-                  <button><span>See plan </span><ChevronRight/></button>
+                  <span>POUR</span>
+                  <h1>200 Ar</h1>
+                  <span className='month-per'>LIVRAISON DE 2 à 3 JOURS</span>
+                  <button><span>Voir detail </span><ChevronRight/></button>
                 </div>
             </div>
         </div>
