@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import "../style.css";
+import "../../style.css";
 import { Search } from "lucide-react";
 import Services from "@/components/service_pages/services";
 import Livraison from "@/components/service_pages/livraison";
@@ -19,14 +19,14 @@ const Service = () => {
               <div>
                 <span>Pages</span>
                 <div>
-                  <small>02 / 03</small>
+                  <small>03 / 03</small>
                   <div className="progress_container">
-                    <div className="progress" style={{"width":`${100/2}%`}}></div>
+                    <div className="progress" style={{"width":`${100}%`}}></div>
                   </div>
                 </div>
               </div>
             </div>
-            <Livraison/>
+            <PayMode/>
          </div>
       </div>
     </div>

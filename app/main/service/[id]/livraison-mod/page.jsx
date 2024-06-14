@@ -1,11 +1,8 @@
 /** @format */
-
+"use client"
 import React from "react";
-import "../style.css";
-import { Search } from "lucide-react";
-import Services from "@/components/service_pages/services";
+import "../../style.css";
 import Livraison from "@/components/service_pages/livraison";
-import PayMode from "@/components/service_pages/pay-mode";
 
 const Service = () => {
   return (
@@ -19,14 +16,14 @@ const Service = () => {
               <div>
                 <span>Pages</span>
                 <div>
-                  <small>03 / 03</small>
+                  <small>02 / 03</small>
                   <div className="progress_container">
-                    <div className="progress" style={{"width":`${100}%`}}></div>
+                    <div className="progress" style={{"width":`${100/2}%`}}></div>
                   </div>
                 </div>
               </div>
             </div>
-            <PayMode/>
+            <Livraison/>
          </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ const Services = async () => {
   return (
     <div className="services-contents">
       {services?.data.map((value, index) => {
-        return <Service data={value} key={index} />;
+        return <Service data={value} key={index} livraison={false}/>;
       })}
     </div>
   );
