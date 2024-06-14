@@ -78,3 +78,8 @@
 .content_login h1 {
   font-weight: 700;
 }
+
+.login .error {
+  color: red;
+  font-size: 13px;
+}

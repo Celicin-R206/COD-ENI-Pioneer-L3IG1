@@ -4,7 +4,7 @@
   min-height: 100vh;
 }
 
-.page_content{
+.page_content {
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   gap: 2rem;
 }
 
-.page_content h1{
+.page_content h1 {
   font-size: 3rem;
   font-weight: 600;
   display: flex;
@@ -22,47 +22,47 @@
 }
 .page_content h1 .page_name {
   padding: 0.25rem;
-  background: linear-gradient(to bottom, #ee3e54, #2d68ff); 
+  background: linear-gradient(to bottom, #ee3e54, #2d68ff);
   position: relative;
   overflow: hidden;
   border-radius: 4px;
 }
-.page_content h1 .page_name::before{
+.page_content h1 .page_name::before {
   position: absolute;
   z-index: 2;
   content: "";
   width: 2.5rem;
   height: 2.5rem;
-  transform: translate(-50%,-50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
   top: 0;
   left: 0;
   background: #f8f5e6;
   border: 4px solid #ee3e54;
 }
 
-.page_content h1 .page_name::after{
+.page_content h1 .page_name::after {
   position: absolute;
   z-index: 2;
   content: "";
   width: 2.5rem;
   height: 2.5rem;
-  transform: translate(50%,50%) rotate(45deg);
+  transform: translate(50%, 50%) rotate(45deg);
   bottom: 0;
   right: 0;
   background: #f8f5e6;
   border: 4px solid #2d68ff;
 }
-.page_content h1 .page_name div{
+.page_content h1 .page_name div {
   padding: 0.2rem 1.5rem;
   background: #f8f5e6;
 }
 
-.page_content > p{
+.page_content > p {
   max-width: 35rem;
   text-align: center;
 }
 
-.page_content > .content{
+.page_content > .content {
   width: 65rem;
   background: var(--white-color);
   padding: 2rem;
@@ -73,28 +73,28 @@
   gap: 2rem;
 }
 
-.page_content > .content >.top{
+.page_content > .content > .top {
   display: flex;
   justify-content: space-between;
 }
 
-.page_content > .content >.top p{
+.page_content > .content > .top p {
   max-width: 30rem;
 }
 
-.page_content > .content >.top > div{
+.page_content > .content > .top > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.page_content > .content >.top > div> div{
+.page_content > .content > .top > div > div {
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
 
-.page_content > .content .progress_container{
+.page_content > .content .progress_container {
   width: 6rem;
   height: 7px;
   border-radius: 0.5rem;
@@ -103,7 +103,7 @@
   position: relative;
 }
 
-.page_content > .content .progress_container .progress{
+.page_content > .content .progress_container .progress {
   position: absolute;
   top: 0;
   left: 0;
