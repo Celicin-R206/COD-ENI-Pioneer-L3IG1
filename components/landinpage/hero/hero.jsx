@@ -5,6 +5,7 @@ import React, { useEffect } from "react";
 import "./hero.css";
 import Image from "next/image";
 import gsap from 'gsap'
+import Link from "next/link";
 
 const Hero = () => {
 
@@ -72,9 +73,11 @@ const Hero = () => {
             fill="black"
           />
         </svg>
-        <button className="btn primary">
-          <div>Commencer maintenant</div>
-        </button>
+        <Link href={"/register"}>
+          <button className="btn primary">
+            <div>Commencer maintenant</div>
+          </button>
+        </Link>
         <svg
           width="123"
           height="123"

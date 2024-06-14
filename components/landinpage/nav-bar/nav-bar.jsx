@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import "./navbar.css"
 import MenuBtn from '../menu-btn/menu-btn'
+import Link from 'next/link'
 
 const NavBar = () => {
 
@@ -14,7 +15,7 @@ const NavBar = () => {
             </svg>
         </div>
         <div className="cta">
-            <button className='btn primary'><div>S'inscrire</div></button>
+            <Link href={"/login"}><button className='btn primary'><div>S'inscrire</div></button></Link>
             <div>
                 <MenuBtn/>
             </div>

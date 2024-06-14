@@ -4,7 +4,7 @@ import React from "react";
 import "./style.css";
 import Image from "next/image";
 
-const login = () => {
+const register = () => {
   return (
     <div className="login">
       <div className="content_login w-fit flex flex-col gap-[1rem] items-center">
@@ -16,7 +16,7 @@ const login = () => {
             alt="logo"
           />
         </div>
-        <h1>Sign in to Pioneer</h1>
+        <h1>S'inscrire à citizens connect</h1>
         <form>
           <span className="email">
             <label htmlFor="email">Username or email address</label>
@@ -25,7 +25,6 @@ const login = () => {
           <span className="password">
             <div>
               <label htmlFor="email">Password</label>
-              <label htmlFor="email">Forgot password</label>
             </div>
             <input type="email" name="email" id="email" />
           </span>
@@ -42,4 +41,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default register;
