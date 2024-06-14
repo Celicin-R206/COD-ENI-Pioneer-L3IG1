@@ -7,7 +7,7 @@ import Services from "@/components/service_pages/services";
 import Livraison from "@/components/service_pages/livraison";
 import PayMode from "@/components/service_pages/pay-mode";
 
-const Service = () => {
+const Service = async () => {
   return (
     <div className="service">
       <div className="top">
@@ -30,23 +30,38 @@ const Service = () => {
         </span>
       </div>
       <div className="bottom page_content">
-          <h1><div className="page_name"><div><span>Service</span></div></div> CitizenConnect</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. In blandit nec pharetra lorem nulla consectetur enim maecenas mauris. Aliquam</p>
-         <div className="content">
-            <div className="top">
-              <p>Super hero cyber polar bear, 3Drender style, HQ, ultra-realisticSuper hero cyber polar bear, 3D render style, HQ,</p>
+        <h1>
+          <div className="page_name">
+            <div>
+              <span>Service</span>
+            </div>
+          </div>{" "}
+          CitizenConnect
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. In blandit nec pharetra lorem
+          nulla consectetur enim maecenas mauris. Aliquam
+        </p>
+        <div className="content">
+          <div className="top">
+            <p>
+              Super hero cyber polar bear, 3Drender style, HQ,
+              ultra-realisticSuper hero cyber polar bear, 3D render style, HQ,
+            </p>
+            <div>
+              <span>Pages</span>
               <div>
-                <span>Pages</span>
-                <div>
-                  <small>01 / 03</small>
-                  <div className="progress_container">
-                    <div className="progress" style={{"width":`${100/3}%`}}></div>
-                  </div>
+                <small>01 / 03</small>
+                <div className="progress_container">
+                  <div
+                    className="progress"
+                    style={{ width: `${100 / 3}%` }}></div>
                 </div>
               </div>
             </div>
-            <Services/>
-         </div>
+          </div>
+          <Services />
+        </div>
       </div>
     </div>
   );

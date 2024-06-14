@@ -1,31 +1,24 @@
-import React from 'react'
+/** @format */
 
-const Service = () => {
+import React from "react";
+
+const Service = ({ data }) => {
   return (
-    
     <div className="service-content">
-    <div className="top">CIN</div>
-    <div className="bottom">
+      <div className="top">{data.nom}</div>
+      <div className="bottom">
         <div className="left">
-            <div>
-                <span>Nouveau</span>
-                <span>3000ar</span>
-            </div>
-            <div>
-                <span>Nouveau</span>
-                <span>3000ar</span>
-            </div>
-            <div>
-                <span>Nouveau</span>
-                <span>3000ar</span>
-            </div>
+          <div>
+            <span>Prix</span>
+            <span>{data.prix} Ariary</span>
+          </div>
         </div>
         <div className="right">
-            <button>Proceder</button>
+          <button>Proceder</button>
         </div>
+      </div>
     </div>
-</div>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;
