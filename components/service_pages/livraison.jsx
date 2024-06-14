@@ -13,11 +13,10 @@ const Livraison = () => {
   const params = useParams()
   const router = useRouter()
   const {id} = params
-
   const {service} = useService(id)
 
   useEffect(()=>{
-    localStorage.setItem('service',JSON.stringify(service?.data))
+    localStorage.setItem('service',JSON.stringify(service.data))
     localStorage.setItem('livraison-price',3000)
   },[])
   
