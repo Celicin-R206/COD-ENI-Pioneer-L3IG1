@@ -7,6 +7,7 @@ import "./style.css";
 import useAuthProtection from "@/app/main/protectedRoute";
 import { LogOut, Settings, User } from "lucide-react";
 import { useLogout } from "@/lib/swr/auth";
+import { useRouter } from "next/navigation";
 
 import {
   DropdownMenu,
@@ -37,6 +38,8 @@ const Header_main = () => {
     logout(token ?? "");
   };
 
+  const navigation = useRouter();
+
   return (
     <div className="header_main">
       <div className="left">
@@ -60,9 +63,17 @@ const Header_main = () => {
       </div>
       <div className="center">
         <ul>
-          <a href="#">Service</a>
-          <a href="#">Map</a>
-          <a href="#">BLog</a>
+          <p
+            className="cursor-pointer"
+            onClick={() => navigation.push("/main/service")}>
+            Services
+          </p>
+          <p
+            className="cursor-pointer"
+            onClick={() => navigation.push("/main/profile")}>
+            Profile
+          </p>
+          <p href="#">BLog</p>
         </ul>
         <div className="money_">
           <div>3000.00 Ar</div>
@@ -99,7 +110,9 @@ const Header_main = () => {
           <DropdownMenuGroup>
             <DropdownMenuItem>
               <User className="mr-2 h-4 w-4" />
-              <span>Profile</span>
+              <span onClick={() => navigation.push("/main/profile")}>
+                Profile
+              </span>
               <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
             </DropdownMenuItem>
             <DropdownMenuItem>
