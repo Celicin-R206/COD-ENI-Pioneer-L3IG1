@@ -421,13 +421,13 @@ const Profile = () => {
           </TabsContent>
         </Tabs>
       </div>
-      {/* <div className="fichier p-4">
+      <div className="fichier p-4">
         <h1>Carte d'idendité Nationale</h1>
         <div className="c">
           <div className="top_"></div>
           <div className="bottom_"></div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
