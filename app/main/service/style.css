@@ -317,11 +317,3 @@
   border-radius: 5px;
   width: fit-content;
 }
-
-.pay-service{
-  cursor: pointer;
-}
-
-.pay-service.active{
-  background: #053bff44;
-}
