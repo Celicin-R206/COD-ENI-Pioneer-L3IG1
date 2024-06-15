@@ -16,9 +16,9 @@ const Livraison = () => {
   const {service} = useService(id)
 
   useEffect(()=>{
-    localStorage.setItem('service',JSON.stringify(service.data))
+    localStorage.setItem('service',JSON.stringify(service?.data))
     localStorage.setItem('livraison-price',3000)
-  },[])
+  },[service])
   
   const toggleActive = (t,price)=>{
     localStorage.setItem('livraison-price',price)
