@@ -1,0 +1,41 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.nav-bar> .cta{
+    display: flex;
+    position: relative;
+    z-index: 200;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cta-menu{
+    width: 5rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--black-color);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.cta-menu svg{
+    width: 32px;
+}
+
+/* .cta-menu  */
+
+/* .nav-bar> .cta svg{
+    height: 2.6rem;
+} */
+
+.nav-bar> .logo svg{
+    width: 5.6rem;
+    height: 4rem;
+}
+
