@@ -1,0 +1,79 @@
+.features{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.features-wrapper{
+    padding-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.features-wrapper .feature{
+    width: 19rem;
+    padding: 3rem 0;
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.features-wrapper .feature:nth-child(2){
+    background: var(--white-rose);
+}
+
+.features-wrapper .feature:nth-child(2) h1,
+.features-wrapper .feature:nth-child(2) .contents >  span{
+    color: var(--rose-color);
+}
+
+.features-wrapper .feature h1{
+    font-size: 2.4rem;
+    color: var(--light-blue);
+    font-weight: 600;
+}
+
+.features-wrapper .feature .contents > span{
+    font-size: 14px;
+    color: var(--grey-color);
+
+}
+
+.features-wrapper .feature .contents > span.month-per{
+    position: relative;
+    top: -10px;
+}
+
+.features-wrapper .feature:nth-child(2) .contents > button{
+    color: var(--rose-color);
+}
+
+.features-wrapper .feature .contents > button{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    align-items: center;
+    background: transparent;
+    border: 1.5px solid var(--grey-color);
+    border-radius: 7px;
+    padding: 0.6rem 1rem;
+    color: var(--light-blue);
+}
+
+.features-wrapper .feature:nth-child(2){
+    position: relative;
+    top: -2rem;
+}
+
+.features-wrapper .feature .contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}

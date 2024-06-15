@@ -1,0 +1,326 @@
+/** @format */
+
+.service > .top {
+  padding: 0 2rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.service > .top span {
+  width: 100%;
+  border: 2px solid var(--dark-blue);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+  align-items: center;
+}
+
+.service > .top span:first-child div {
+  border-left: 2px solid var(--dark-blue);
+  height: 3rem;
+}
+
+.service > .top span input {
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  outline: none;
+}
+
+.service > .top span:last-child > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.service > .top span:last-child > div select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.services-contents,
+.livraison_mode{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.service-content{
+  background: url("/assets/images/service-bg.svg") no-repeat center;
+  background-size: cover;
+  padding: 1rem;
+  border: 1px solid var(--dark-blue);
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-content > .top{
+  padding: 0.2rem 1rem;
+  color: var(--light-blue);
+  border: 1.4px solid var(--light-blue);
+  width: fit-content;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.service-content > .bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.service-content > .bottom .left{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.service-content > .bottom .left span{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.service-content > .bottom .left > div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-content > .bottom .right button{
+  color: var(--white-color);
+  background: var(--dark-blue);
+  padding: 0.3rem 1rem;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.livraison_mode >.left{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.livraison_mode >.left>h4{
+  margin-top: 1.5rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.livraison_mode >.left button{
+  color: var(--white-color);
+  background: var(--dark-blue);
+  padding: 0.3rem 1rem;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.livraison_mode .livraison-mode-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.livraison_mode .livraison-mode-wrapper .livraison{
+  padding: 1rem;
+  border: 1px solid var(--dark-blue);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.livraison_mode .livraison-mode-wrapper .livraison.active{
+  background: #053bff44;
+}
+
+.livraison_mode .livraison-mode-wrapper .livraison .top{
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.livraison_mode .livraison-mode-wrapper .livraison .top >div{
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+.livraison_mode .livraison-mode-wrapper .livraison .top >div span{
+  font-weight: 600;
+}
+
+.livraison_mode .livraison-mode-wrapper .livraison .top img{
+  width: 6rem;
+}
+
+.livraison_mode .livraison-mode-wrapper .livraison p{
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+
+.livraison_mode >.right{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+}
+
+.livraison_mode >.right > .top{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+.livraison_mode >.right > .top select{
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--dark-blue);
+}
+
+.livraison_mode >.right > .bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.livraison_mode >.right > .bottom h4{
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 3rem;
+}
+
+.livraison_mode >.right > .bottom > div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+.livraison_mode >.right > .bottom > div label{
+  font-weight: 600;
+}
+
+
+.pay_mode {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pay_mode > .top{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pay_mode > .top > div{
+  display: flex;
+  gap: 1rem;
+}
+
+.pay_mode > .top > div > div{
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0.8rem;
+  border: 1.4px solid var(--dark-blue);
+  border-radius: 5px;
+}
+
+.pay_mode h4{
+  font-size: 18px;
+  font-weight: 600;
+}
+.pay_mode > .bottom{
+  display: flex;
+  width: 100%;
+}
+
+.pay_mode > .bottom > div{
+  flex: 1;
+}
+
+.pay_mode > .bottom > .left{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-right: 1px solid var(--dark-blue);
+  padding-bottom: 4rem;
+}
+
+.pay_mode > .bottom > .left > div{
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.4px solid var(--dark-blue);
+  gap: 0.2rem;
+}
+.pay_mode > .bottom > .left > div small{
+  font-size: 15px;
+}
+.pay_mode > .bottom > .left > div h6{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pay_mode > .bottom > .left > div > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pay_mode > .bottom > .left > div .price{
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.pay_mode > .bottom > .right{
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pay_mode > .bottom > .right> span{
+  font-weight: 600;
+}
+
+.pay_mode > .bottom > .right> div{
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  margin-top: -1rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--black-color);
+  width: 20rem;
+}
+
+.pay_mode > .bottom > .right> div img{
+  width: 1.6rem;
+}
+
+.pay_mode> .bottom > .right button {
+  color: var(--white-color);
+  background: var(--dark-blue);
+  padding: 0.3rem 1rem;
+  font-size: 14px;
+  border-radius: 5px;
+  width: fit-content;
+}
+.pay-service{
+  cursor: pointer;
+}
+
+.pay-service.active{
+  background: #053bff44;
+}

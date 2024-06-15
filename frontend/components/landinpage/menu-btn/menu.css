@@ -1,0 +1,32 @@
+.openMenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    /* z-index: 999; */
+    padding: 1rem;
+    background: green;
+    width: 200rem;
+    height: 200rem;
+    border-radius: 50%;
+    transition: background .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    /* transform: scale(0); */
+}
+
+ /* .menu.openMenu svg path{
+    color: #fff;
+}
+
+ .menu.close{
+    background: #fff;
+} */
+
+ .menu.close svg path{
+    stroke: black;
+}
+
+.openMenu svg{
+    width: 32px;
+    height: 32px;
+}
