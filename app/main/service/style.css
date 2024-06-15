@@ -2,7 +2,7 @@
 
 .service > .top {
   padding: 0 2rem;
-  margin-top: 7rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -46,13 +46,13 @@
 }
 
 .services-contents,
-.livraison_mode {
+.livraison_mode{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-.service-content {
+.service-content{
   background: url("/assets/images/service-bg.svg") no-repeat center;
   background-size: cover;
   padding: 1rem;
@@ -63,7 +63,7 @@
   gap: 2rem;
 }
 
-.service-content > .top {
+.service-content > .top{
   padding: 0.2rem 1rem;
   color: var(--light-blue);
   border: 1.4px solid var(--light-blue);
@@ -72,29 +72,29 @@
   font-weight: 600;
 }
 
-.service-content > .bottom {
+.service-content > .bottom{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.service-content > .bottom .left {
+.service-content > .bottom .left{
   display: flex;
   gap: 1.5rem;
 }
 
-.service-content > .bottom .left span {
+.service-content > .bottom .left span{
   font-size: 15px;
   font-weight: 600;
 }
 
-.service-content > .bottom .left > div {
+.service-content > .bottom .left > div{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.service-content > .bottom .right button {
+.service-content > .bottom .right button{
   color: var(--white-color);
   background: var(--dark-blue);
   padding: 0.3rem 1rem;
@@ -102,19 +102,19 @@
   border-radius: 5px;
 }
 
-.livraison_mode > .left {
+.livraison_mode >.left{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.livraison_mode > .left > h4 {
+.livraison_mode >.left>h4{
   margin-top: 1.5rem;
   font-size: 20px;
   font-weight: 600;
 }
 
-.livraison_mode > .left button {
+.livraison_mode >.left button{
   color: var(--white-color);
   background: var(--dark-blue);
   padding: 0.3rem 1rem;
@@ -123,55 +123,56 @@
   margin-top: 2rem;
 }
 
-.livraison_mode .livraison-mode-wrapper {
+.livraison_mode .livraison-mode-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-.livraison_mode .livraison-mode-wrapper .livraison {
+.livraison_mode .livraison-mode-wrapper .livraison{
   padding: 1rem;
   border: 1px solid var(--dark-blue);
   border-radius: 1rem;
   cursor: pointer;
 }
 
-.livraison_mode .livraison-mode-wrapper .livraison.active {
+.livraison_mode .livraison-mode-wrapper .livraison.active{
   background: #053bff44;
 }
 
-.livraison_mode .livraison-mode-wrapper .livraison .top {
+.livraison_mode .livraison-mode-wrapper .livraison .top{
   display: flex;
   gap: 1rem;
   align-items: flex-end;
 }
 
-.livraison_mode .livraison-mode-wrapper .livraison .top > div {
+.livraison_mode .livraison-mode-wrapper .livraison .top >div{
   padding: 0.5rem 0;
   border-bottom: 1px solid var(--dark-blue);
 }
 
-.livraison_mode .livraison-mode-wrapper .livraison .top > div span {
+.livraison_mode .livraison-mode-wrapper .livraison .top >div span{
   font-weight: 600;
 }
 
-.livraison_mode .livraison-mode-wrapper .livraison .top img {
+.livraison_mode .livraison-mode-wrapper .livraison .top img{
   width: 6rem;
 }
 
-.livraison_mode .livraison-mode-wrapper .livraison p {
+.livraison_mode .livraison-mode-wrapper .livraison p{
   font-size: 14px;
   margin-top: 1rem;
 }
 
-.livraison_mode > .right {
+
+.livraison_mode >.right{
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding-left: 2rem;
 }
 
-.livraison_mode > .right > .top {
+.livraison_mode >.right > .top{
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -179,24 +180,24 @@
   border-bottom: 1px solid var(--dark-blue);
 }
 
-.livraison_mode > .right > .top select {
+.livraison_mode >.right > .top select{
   padding: 0.3rem 0.8rem;
   border: 1px solid var(--dark-blue);
 }
 
-.livraison_mode > .right > .bottom {
+.livraison_mode >.right > .bottom{
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
-.livraison_mode > .right > .bottom h4 {
+.livraison_mode >.right > .bottom h4{
   font-weight: 600;
   font-size: 20px;
   margin-top: 3rem;
 }
 
-.livraison_mode > .right > .bottom > div {
+.livraison_mode >.right > .bottom > div{
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -205,9 +206,10 @@
   border-bottom: 1px solid var(--dark-blue);
 }
 
-.livraison_mode > .right > .bottom > div label {
+.livraison_mode >.right > .bottom > div label{
   font-weight: 600;
 }
+
 
 .pay_mode {
   display: flex;
@@ -215,18 +217,18 @@
   gap: 2rem;
 }
 
-.pay_mode > .top {
+.pay_mode > .top{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.pay_mode > .top > div {
+.pay_mode > .top > div{
   display: flex;
   gap: 1rem;
 }
 
-.pay_mode > .top > div > div {
+.pay_mode > .top > div > div{
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -235,20 +237,20 @@
   border-radius: 5px;
 }
 
-.pay_mode h4 {
+.pay_mode h4{
   font-size: 18px;
   font-weight: 600;
 }
-.pay_mode > .bottom {
+.pay_mode > .bottom{
   display: flex;
   width: 100%;
 }
 
-.pay_mode > .bottom > div {
+.pay_mode > .bottom > div{
   flex: 1;
 }
 
-.pay_mode > .bottom > .left {
+.pay_mode > .bottom > .left{
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -256,7 +258,7 @@
   padding-bottom: 4rem;
 }
 
-.pay_mode > .bottom > .left > div {
+.pay_mode > .bottom > .left > div{
   display: flex;
   flex-direction: column;
   width: 22rem;
@@ -264,36 +266,36 @@
   border-bottom: 1.4px solid var(--dark-blue);
   gap: 0.2rem;
 }
-.pay_mode > .bottom > .left > div small {
+.pay_mode > .bottom > .left > div small{
   font-size: 15px;
 }
-.pay_mode > .bottom > .left > div h6 {
+.pay_mode > .bottom > .left > div h6{
   font-size: 16px;
   font-weight: 600;
 }
 
-.pay_mode > .bottom > .left > div > div {
+.pay_mode > .bottom > .left > div > div{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.pay_mode > .bottom > .left > div .price {
+.pay_mode > .bottom > .left > div .price{
   font-weight: 700;
   color: var(--dark-blue);
 }
 
-.pay_mode > .bottom > .right {
+.pay_mode > .bottom > .right{
   padding-left: 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.pay_mode > .bottom > .right > span {
+.pay_mode > .bottom > .right> span{
   font-weight: 600;
 }
 
-.pay_mode > .bottom > .right > div {
+.pay_mode > .bottom > .right> div{
   display: flex;
   gap: 0.7rem;
   align-items: center;
@@ -303,15 +305,23 @@
   width: 20rem;
 }
 
-.pay_mode > .bottom > .right > div img {
+.pay_mode > .bottom > .right> div img{
   width: 1.6rem;
 }
 
-.pay_mode > .bottom > .right button {
+.pay_mode> .bottom > .right button {
   color: var(--white-color);
   background: var(--dark-blue);
   padding: 0.3rem 1rem;
   font-size: 14px;
   border-radius: 5px;
   width: fit-content;
+}
+
+.pay-service{
+  cursor: pointer;
+}
+
+.pay-service.active{
+  background: #053bff44;
 }
