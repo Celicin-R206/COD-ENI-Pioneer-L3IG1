@@ -1,13 +1,13 @@
 /** @format */
 "use client";
 
-import React, { useRef, useState } from 'react';
-import Webcam from 'react-webcam';
+import React, { useRef, useState } from "react";
+import Webcam from "react-webcam";
 import "./style.css";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { useLogin } from "@/lib/swr/auth";
-import axios from 'axios';
+import axios from "axios";
 
 const Register = () => {
   const {
@@ -29,17 +29,20 @@ const Register = () => {
     try {
       const blob = await fetch(imageSrc).then((res) => res.blob());
       const formData = new FormData();
-      formData.append('capture', blob , "captured.jpg");
-      formData.append('code',data.code)
-      
-      const response = await axios.post('http://192.168.102.125:8000/api/loginCam',formData,{
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+      formData.append("capture", blob, "captured.jpg");
+      formData.append("code", data.code);
+
+      const response = await axios.post(
+        "http://192.168.102.125:8000/api/loginCam",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
 
       console.log(response);
-      
     } catch (error) {
       console.error("Failed to register:", error);
     } finally {
@@ -71,7 +74,7 @@ const Register = () => {
             />
             {errors.code && <p className="error">{errors.code.message}</p>}
           </span>
-          <div className='faciale-log'>
+          <div className="faciale-log">
             <Webcam
               audio={false}
               ref={webcamRef}
