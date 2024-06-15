@@ -1,20 +1,22 @@
-.brand-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    gap: 1rem;
-    padding-top: 3rem;
+/** @format */
+
+.brand-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 1rem;
+  padding-top: 3rem;
 }
 
-.brand-section svg{
-    width: 100%;
+.brand-section svg {
+  width: 100%;
 }
 
-.brand-section p{
-    margin-bottom: 2rem;
-    max-width: 30rem;
-    text-align: center;
-    font-size: 18px;
+.brand-section p {
+  margin-bottom: 2rem;
+  max-width: 30rem;
+  text-align: center;
+  font-size: 18px;
 }

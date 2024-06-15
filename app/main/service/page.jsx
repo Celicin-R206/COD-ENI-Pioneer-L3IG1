@@ -39,14 +39,15 @@ const Service = async () => {
           CitizenConnect
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur. In blandit nec pharetra lorem
-          nulla consectetur enim maecenas mauris. Aliquam
+          Organisez vos rendez-vous administratifs sans effort grâce à notre
+          système de réservation en ligne, évitant ainsi les longues files
+          d'attente et les délais d'attente prolongés.
         </p>
         <div className="content">
           <div className="top">
             <p>
-              Super hero cyber polar bear, 3Drender style, HQ,
-              ultra-realisticSuper hero cyber polar bear, 3D render style, HQ,
+              Voici la liste de tous les services que nous offrons pour
+              faciliter vos démarches administratives
             </p>
             <div>
               <span>Pages</span>
