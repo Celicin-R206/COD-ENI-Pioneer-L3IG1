@@ -73,7 +73,8 @@ const Header_main = () => {
             onClick={() => navigation.push("/main/profile")}>
             Profile
           </p>
-          <p href="#">BLog</p>
+          <p 
+          onClick={() => navigation.push("/main/faciale")}>Reconnaissance faciale</p>
         </ul>
         <div className="money_">
           <div>3000.00 Ar</div>

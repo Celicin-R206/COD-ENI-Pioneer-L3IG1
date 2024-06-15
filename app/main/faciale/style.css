@@ -1,0 +1,14 @@
+
+.faciale{
+    width: 40rem;
+    height: 60rem;
+    margin: 3rem auto;
+}
+
+.faciale button{
+    margin: 1rem auto;
+    background: var(--dark-blue);
+    color: var(--white-color);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+}
