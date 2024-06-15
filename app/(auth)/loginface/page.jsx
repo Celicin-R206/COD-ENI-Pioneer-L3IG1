@@ -1,12 +1,13 @@
 /** @format */
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from 'react';
+import Webcam from 'react-webcam';
 import "./style.css";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { useLogin } from "@/lib/swr/auth";
-import Link from "next/link";
+import axios from 'axios';
 
 const Register = () => {
   const {
@@ -15,15 +16,30 @@ const Register = () => {
     reset,
     formState: { isSubmitting, errors },
   } = useForm();
+  const webcamRef = useRef(null);
 
   const { login } = useLogin();
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (data) => {
+    const imageSrc = webcamRef.current.getScreenshot();
+
+    if (!imageSrc) return;
+    setIsLoading(true);
     try {
-      setIsLoading(true);
-      const response = await login(data.code, data.password);
+      const blob = await fetch(imageSrc).then((res) => res.blob());
+      const formData = new FormData();
+      formData.append('capture', blob , "captured.jpg");
+      formData.append('code',data.code)
+      
+      const response = await axios.post('http://192.168.102.125:8000/api/loginCam',formData,{
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+
       console.log(response);
+      
     } catch (error) {
       console.error("Failed to register:", error);
     } finally {
@@ -55,25 +71,19 @@ const Register = () => {
             />
             {errors.code && <p className="error">{errors.code.message}</p>}
           </span>
-          <span className="password">
-            <div>
-              <label htmlFor="password">Password</label>
-            </div>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              {...register("password", { required: "Password is required" })}
+          <div className='faciale-log'>
+            <Webcam
+              audio={false}
+              ref={webcamRef}
+              screenshotFormat="image/jpeg"
+              width="100%"
+              height="100%"
             />
-            {errors.password && (
-              <p className="error">{errors.password.message}</p>
-            )}
-          </span>
+          </div>
           <span>
             <button type="submit" disabled={isSubmitting}>
               S'identifier
             </button>
-            <Link href={"/loginface"}>Utiliser un autre methode</Link>
           </span>
         </form>
         <div className="bottom_login">
